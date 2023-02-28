@@ -1,0 +1,246 @@
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding-left: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    display: block;
+}
+
+body {
+    
+    background-image: url('./img/background-image.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+/*fonts:
+    font-family: 'Inria Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
+*/
+
+:root {
+    --text-white: #fff;
+    --text-black: #000;
+    --box-shadow: 0 0 11px 4px rgba(81, 96, 135, 0.4);
+    --transition: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header {
+    width: 1156px;
+    margin: 0 auto;
+    padding-top: 42px;
+}
+
+.nav {
+    display: flex;
+    gap: 78px;
+    padding-left: 671px;
+}
+
+.nav__link {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-black);
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.2em;
+    letter-spacing: 0.14em;
+    transition: color 250ms, font-weight 250ms;
+    transition-timing-function: var(--transition);
+}
+
+.active-link, .nav__link:focus, .nav__link:hover {
+    color: var(--text-white);
+}
+
+.section {
+    width: 987px;
+    margin: 0 auto;
+    margin-top: 97px;
+    padding-bottom: 31px;
+}
+
+.section-container {
+    margin-left: 40px;
+}
+
+.porsche-list {
+    display: flex;
+    gap: 100px;
+    position: relative;
+    max-width: 947px;
+    margin-bottom: 38px;
+}
+
+.porsche-list__elem {
+
+}
+.porsche-list__img {
+
+}
+
+.porsche-list__inf::before {
+    /*content: '';
+    display: block;
+    background-color: var(--text-white);
+    width: 1px;*/
+    content: '';
+    display: block;
+    width: 90px;
+    height: 1px;
+    background-color: #fff;
+    transform: rotateZ(90deg);
+    position: absolute;
+    top: 28px;
+    left: -70px;
+    cursor: default;
+}
+
+.porsche-list__inf {
+    max-width: 465px;
+    color: var(--text-white);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.2em;
+    letter-spacing: 0.075em;
+    margin-top: 10px;
+    margin-bottom: 16px;
+    position: relative;
+}
+
+.porsche-list__inf::after {
+    content: '';
+    display: block;
+    width: 284px;
+    height: 0.5px;
+    background-color: #fff;
+    position: absolute;
+    cursor: default;
+    right: -80px;
+    margin-top: 12px;
+}
+
+.porsche-list__link {
+    position: absolute;
+    right: 45px;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: calc(19/16);
+    letter-spacing: 0.16em;
+    color: var(--text-black);
+    text-transform: lowercase;
+    display: flex;
+    transition: color 250ms;
+    transition-timing-function: var(--transition);
+}
+
+.porsche-list__link:hover {
+    color: var(--text-white);
+}
+
+.porsche-list__link::before {
+    content: '';
+    display: block;
+    width: 434px;
+    height: 1px;
+    background-color: #fff;
+    transform: rotateZ(90deg);
+    position: absolute;
+    top: 195px;
+    left: -95px;
+    cursor: default;
+}
+
+.porsche-list__link::after {
+    content: url("./img/arrow.png");
+    margin-left: 10px;
+    width: 14px;
+  }
+
+.name-car {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: calc(29/24);
+    letter-spacing: 0.345em;
+    color: var(--text-white);
+    position: relative;
+}
+
+.name-car::before {
+    content: '';
+    display: block;
+    width: 301px;
+    height: 0.5px;
+    background-color: #fff;
+    position: absolute;
+    cursor: default;
+    left: -129px;
+    bottom: 40px;
+}
+
+.name-car::after {
+    content: '';
+    display: block;
+    width: 434px;
+    height: 1px;
+    background-color: #fff;
+    transform: rotateZ(90deg);
+    position: absolute;
+    top: 70px;
+    left: -234px;
+    cursor: default;
+}
+
+.types-list {
+    margin-top: 353px;
+    display: flex;
+    gap: 51px;
+    width: 100%;
+}
+
+.types-list__elem {
+    width: 280px;
+    display: flex;
+    height: 125px;
+}
+.types-list__photo {
+    box-shadow: var(--box-shadow);
+}
+.types-list__inf {
+    margin: auto 0;
+    margin-left: 30px;
+    max-width: 125px;
+    font-family: 'Inria Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 146.4%;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--text-white);
+}
